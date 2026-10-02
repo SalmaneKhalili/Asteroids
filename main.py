@@ -45,7 +45,7 @@ def main():
             for sh in shots:
                 if ter.collides_with(sh):
                     log_event("asteroid_shot")
-                    ter.kill()
+                    ter.split()
                     sh.kill()
 
         for aster in asteroids:
